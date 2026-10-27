@@ -1,0 +1,21 @@
+.record-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.record-actions .button{padding:7px 10px;font-size:11px}
+.class-card .record-actions{margin-top:14px}
+.button.danger{color:#934238;border-color:#e7c9c4}
+.button.danger:hover{background:#fcf2f0;border-color:#d6aaa3}
+.app-dialog{display:none;position:fixed;z-index:1000;top:0;right:0;bottom:0;left:0;overflow:auto;align-items:center;justify-content:center;padding:15px;background:rgba(23,32,29,.82)}
+.app-dialog.open{display:flex}
+.app-dialog form{position:absolute;top:50%;left:50%;width:600px;width:calc(100% - 30px);max-width:600px;max-height:90vh;overflow:auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 25px 80px rgba(0,0,0,.2);transform:translate(-50%,-50%)}
+/* EdgeHTML layout fallbacks for the grid, gap, clamp, and max() rules in the main theme. */
+.school-header{padding:0 24px}
+.school-main{padding:40px 24px}
+.class-cards{display:flex;flex-wrap:wrap;margin:-8px}
+.class-card{width:calc(50% - 16px);margin:8px}
+.dialog-fields{display:flex;flex-wrap:wrap}
+.form-field{display:block;width:calc(50% - 7px);margin:0 3px 12px}
+.form-field label{display:block;margin-bottom:6px}
+.form-field.full{width:100%}
+.dialog-fields input,.dialog-fields select,.dialog-fields textarea{display:block}
+@media(max-width:680px){.school-main{padding:24px 15px}.class-card{width:calc(100% - 16px)}.form-field,.form-field.full{width:100%}}
+#toast{top:18px;bottom:auto;left:50%;right:auto;width:80%;max-width:700px;z-index:2001;transform:translate(-50%,-15px);font-size:15px;line-height:1.45}
+#toast.show{transform:translate(-50%,0)}
